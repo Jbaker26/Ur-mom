@@ -1,3 +1,80 @@
-p {
-    color: blue;
+/* ===== Colors ===== */
+:root {
+    --primary-color: blue;
+    --secondary-color: aqua;
+    --background-color: green;
+    --text-color: black;
+    --hover-color: white;
+    --section-color: rgb(196, 196, 196);
+}
+
+/* =====Main===== */
+
+body {
+    background-color: var(--background-color);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =====Navigation===== */
+header {
+    padding: 1%;
+    display: flex;
+    border-radius: 10px;
+    width: 93%;
+    margin: 0 auto;
+}
+.navigation{
+    gap: 10px;
+    list-style: none;
+    display: flex;
+}
+.btn{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    display:block;
+    font-weight: bold;
+    border: 5px solid rgb(0,0,0);
+}
+.btn:hover {
+    border: 5px solid var(--hover-color);
+}
+.btn.active {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* =====Content===== */
+
+#content {
+    border: 5px solid var(--primary-color);
+    background-color: var(--section-color);
+    padding: 2.5%;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10px;
+}
+
+#home {
+    background-color: var(--section-color);
+    color: var(--text-color);
+}
+
+/* =====Copyright Footer===== */
+
+#copyright {
+    border: 5px solid var(--primary-color);
+    background-color: var(--section-color);    
+    text-align: center;
+    padding: 2.5%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: var(--text-color);
 }

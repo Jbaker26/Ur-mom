@@ -6,10 +6,24 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+        <header>     
+            <!-- Logo -->
+            <img alt="Wild Kratts" height="70" src="assets/logo.png">
+            <!-- Navigation -->      
+            <ul class="navigation">
+                <li><button class="btn active" data-page="pages/home.html">Home</button></li>
+                <li><button class="btn" data-page="pages/about.html">About</button></li>
+                <li><button class="btn" data-page="pages/videos.html">Videos</button></li>
+                <li><button class="btn" data-page="pages/images.html">Images</button></li>
+            </ul>
         </header>
+        <!-- Content -->
+        <section id="content"></section>
+        <!-- Copyright Footer -->
         <footer>
-            <p>Copyright 2026 Ur mom</p>
+            <p id="copyright">Copyright 2026 Ur mom</p>
         </footer>
+        
+        <script src="script.js"></script>
     </body>
 </html>
