@@ -1,73 +1,70 @@
 /* ===== Colors ===== */
 :root {
-    --primary-color: blue;
-    --secondary-color: aqua;
     --background-color: green;
+    --section-color: lightgray;
+    --button-color: aqua;
     --text-color: black;
-    --hover-color: white;
-    --section-color: rgb(196, 196, 196);
+    --outline-color: black;
+    --active-color: blue;
+    --active-text-color: white;
 }
 
 /* =====Main===== */
-
+#logo {
+    padding: 15px;
+    height: 85px;
+}
 body {
     background-color: var(--background-color);
+    color: var(--text-color);
     gap: 10px;
     display: flex;
     flex-direction: column;
 }
 
 /* =====Navigation===== */
+
 header {
-    padding: 1%;
+    padding: 0;
     display: flex;
     border-radius: 10px;
-    width: 93%;
+    width: 95%;
     margin: 0 auto;
+    align-items: center;
+    background-color: var(--section-color);
+    border: 5px solid var(--outline-color);
 }
 .navigation{
     gap: 10px;
     list-style: none;
     display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 .btn{
-    background-color: var(--secondary-color);
+    background-color: var(--button-color);
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
     color: var(--text-color);
     display:block;
     font-weight: bold;
-    border: 5px solid rgb(0,0,0);
+    border: 5px solid var(--outline-color);
 }
 .btn:hover {
-    border: 5px solid var(--hover-color);
+    outline: 4px solid var(--outline-color);
 }
 .btn.active {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-}
-
-/* =====Content===== */
-
-#content {
-    border: 5px solid var(--primary-color);
-    background-color: var(--section-color);
-    padding: 2.5%;
-    margin: 0 auto;
-    width: 90%;
-    border-radius: 10px;
-}
-
-#home {
-    background-color: var(--section-color);
-    color: var(--text-color);
+    background-color: var(--active-color);
+    color: var(--active-text-color);
+    outline: 4px solid var(--outline-color);
 }
 
 /* =====Copyright Footer===== */
 
 #copyright {
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--outline-color);
     background-color: var(--section-color);    
     text-align: center;
     padding: 2.5%;
@@ -77,4 +74,51 @@ header {
     font-weight: bold;
     border-radius: 10px;
     color: var(--text-color);
+}
+
+/* =====Content===== */
+
+#content {
+    border: 5px solid var(--outline-color);
+    background-color: var(--section-color);
+    padding: 2.5%;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10px;
+}
+/*home*/
+#home{
+    background-color: var(--section-color);
+    color: var(--text-color);
+}
+/*videos*/
+#videos{
+    background-color: var(--section-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+#videos .video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+#videos .video-card {
+    background-color: var(--button-color);
+    border: 5px solid var(--outline-color);
+    border-radius: 10px;
+    max-width: 30%;
+    text-align: center;
+    overflow: hidden;
+    font-weight: bold;
+    color: var(--text-color);
+}
+#videos .video-card:hover {
+    outline: 4px solid var(--outline-color);
+}
+#videos .video-card img {
+    width: 100%;
+    display: block;
 }
