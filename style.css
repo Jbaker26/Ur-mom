@@ -58,7 +58,7 @@ header {
 .btn.active {
     background-color: var(--active-color);
     color: var(--active-text-color);
-    outline: 4px solid var(--outline-color);
+    /* outline: 4px solid var(--outline-color); */
 }
 
 /* =====Copyright Footer===== */
