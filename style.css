@@ -51,11 +51,11 @@ header {
     display:block;
     font-weight: bold;
     outline: 5px solid var(--outline-color);
-    transition: all 0.3s ease;
-    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    font-size: 25px;
 }
 .btn:hover {
-    outline: 10px solid var(--outline-color);
+    outline-width: 7.5px
 }
 .btn.active {
     background-color: var(--active-color);
@@ -116,7 +116,7 @@ header {
     font-weight: bold;
     color: var(--text-color);
     outline: 5px solid var(--outline-color);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 #videos .video-card:hover {
     outline-width: 10px
