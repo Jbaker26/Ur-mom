@@ -44,18 +44,19 @@ header {
 }
 .btn{
     background-color: var(--button-color);
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 7.5px;
+    padding: 5px;
+    padding-inline: 10px;
     text-decoration: none;
     color: var(--text-color);
     display:block;
     font-weight: bold;
-    outline: 5px solid var(--outline-color);
-    transition: all 0.3s ease-in-out;
+    outline: 4px solid var(--outline-color);
+    transition: all 0.1s;
     font-size: 25px;
 }
 .btn:hover {
-    outline-width: 7.5px
+    outline-width: 6px
 }
 .btn.active {
     background-color: var(--active-color);
@@ -87,41 +88,4 @@ header {
     margin: 0 auto;
     width: 90%;
     border-radius: 10px;
-}
-/*home*/
-#home{
-    background-color: var(--section-color);
-    color: var(--text-color);
-}
-/*videos*/
-#videos{
-    background-color: var(--section-color);
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-}
-#videos .video-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-    gap: 20px;
-}
-#videos .video-card {
-    background-color: var(--button-color);
-    border-radius: 10px;
-    max-width: 30%;
-    text-align: center;
-    overflow: hidden;
-    font-weight: bold;
-    color: var(--text-color);
-    outline: 5px solid var(--outline-color);
-    transition: all 0.3s ease-in-out;
-}
-#videos .video-card:hover {
-    outline-width: 10px
-}
-#videos .video-card img {
-    width: 100%;
-    display: block;
 }

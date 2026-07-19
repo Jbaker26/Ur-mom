@@ -35,4 +35,4 @@ buttons.forEach(button => {
 });
 
 // Load home page automatically
-loadPage("pages/home.html");
+loadPage("pages/.html");
