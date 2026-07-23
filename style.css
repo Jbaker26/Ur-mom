@@ -42,7 +42,7 @@ header {
     padding: 0;
     margin: 0;
 }
-.btn{
+.nav{
     background-color: var(--button-color);
     border-radius: 7.5px;
     padding: 5px;
@@ -55,10 +55,10 @@ header {
     transition: all 0.1s;
     font-size: 25px;
 }
-.btn:hover {
+.nav:hover {
     outline-width: 6px
 }
-.btn.active {
+.nav.active {
     background-color: var(--active-color);
     color: var(--active-text-color);
     /* outline: 4px solid var(--outline-color); */
